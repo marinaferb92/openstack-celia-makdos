@@ -6,5 +6,6 @@ nav:
     - Practica 1: practica1.md
 theme:
   palette:
-    scheme: teal
-    languaje: eu
+    scheme: slate
+    primary: teal
+    language: eu
