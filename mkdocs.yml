@@ -6,10 +6,8 @@ nav:
     - Practica 1: practica1.md
 
 theme:
-  name: material  # ← Agrega el nombre del tema aquí
-  palette:
-    scheme: slate
-    primary: teal
+  name: dracula  # ← Agrega el nombre del tema aquí
+
 
 extra:
   language: eu
