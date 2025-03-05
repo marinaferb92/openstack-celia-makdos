@@ -6,7 +6,7 @@ nav:
     - Practica 1: practica1.md
 
 theme:
-  name: dracula  # ← Agrega el nombre del tema aquí
+  name: dracula  
 
 
 extra:
