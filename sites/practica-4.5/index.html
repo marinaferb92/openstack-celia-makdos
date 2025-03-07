@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Practica 1 - Marina mkdocks</title>
+        <title>practica-iaw-4.5 - Marina mkdocks</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,14 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
 
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
-        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -66,24 +66,31 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href=".."
+                <a href="../.."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Principal
                 </a>
             </li>
             <li class="drac-box">
-                <a href="../about.md"
+                <a href="../../about.md"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Acerca de
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./"
-                    class=" active 
+                <a href="../../practica-3.1/"
+                    class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-                    Practica 1
+                    Practica 3.1
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../practica-4.5.md"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Practica 4.5
                 </a>
             </li>
         </ul>
@@ -111,28 +118,12 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
-        <div class="container">
-            <div class="row row-preview">
-                <div class="col">
-                    <a href=".."
-                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </div>
-                <div class="col">
-                    <a 
-                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -157,7 +148,33 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p></p>
+        <p><h1 id="practica-iaw-45">practica-iaw-4.5</h1>
+<h1 id="terraform">Terraform</h1>
+<p>Terraform es una infraestructura que nos permite de forma automatizada crear, modificar y eliminar infraestructuras.
+En esta practica vamos a hacerlo gestionando el servicio de AWS.</p>
+<p>Para empezar, instalaremos Terraform como se nos indica en la guía oficial <a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli">guia oficial de terraform</a>.
+Tambien deberemos instalar la herramienta de AWS cli y configurar nuestras credenciales de acceso utilizando el comando 
+<code>aws configure</code>
+<img alt="image" src="https://github.com/user-attachments/assets/2a912569-dd0b-435f-adb8-b70a0f4b9948" /></p>
+<p>Una vez hecho podremos empezar a <strong>Iniciar el directorio de trabajo</strong> para ello ejecutaremos utilizaremos <code>terraform init</code> </p>
+<p>Con <code>terraform fmt</code> formatean el archivo de configuración para que sea más legible y <code>terraform validate</code> validamos el archivo de configuración
+<img alt="mhIX5wvw6Y" src="https://github.com/user-attachments/assets/07295e35-66a2-46d2-8d62-9298c8ac4409" /></p>
+<p><code>terraform plan</code> nos permite ver los cambios que se aplicarán antes de ejecutarlos. </p>
+<p><img alt="CMR2erKpt0" src="https://github.com/user-attachments/assets/f5253b0d-cdb5-4782-a53f-930439c83882" /></p>
+<p>Una vez que tenemos seguridad de que nuestro archivo es correcto ejecutaremos <code>terraform apply</code> o `terraform apply -auto-approve, el segundo crea los recursos sin tener que estar confirmando, y veremos como se comienza a desplegar la infraestructura.</p>
+<p><img alt="KF30wPCKKg" src="https://github.com/user-attachments/assets/fa46a5ea-fd5a-413e-9fff-a66fa103701c" /></p>
+<p><img alt="sdXN6cEYfJ" src="https://github.com/user-attachments/assets/ac1115c7-1939-42bf-a639-3c53822336af" /></p>
+<p><img alt="wcblmYPKRe" src="https://github.com/user-attachments/assets/f39f67a7-c664-4606-9a22-90b457f7be13" /></p>
+<p>Una vez terminado si entramos en AWS vemos que la infraestructura está creada, con sus grupos de seguridad y las IPs flotantes creadas y asociadas a cada instancia.</p>
+<p><img alt="UA4vYrRa5s" src="https://github.com/user-attachments/assets/f6592c1c-edab-4088-9c27-e79dbe92b1a7" /></p>
+<p><img alt="AfUt282x2Y" src="https://github.com/user-attachments/assets/435e0b5a-e49e-4a97-b8e0-d0ceed937171" /></p>
+<p><img alt="Hbk3zCLvlz" src="https://github.com/user-attachments/assets/34e0c9ff-9b24-46a1-91e1-9545e25cc0ee" /></p>
+<p>Ejecutando <code>terraform show</code> podremos ver los recursos que tenemos creados y su estado</p>
+<p><img alt="P2FLgMwBxF" src="https://github.com/user-attachments/assets/e107f0a7-50c2-4b2e-a966-d1f20579e14f" /></p>
+<p>y con <code>terraform destroy</code> podremos destruir la infraestructura completa sin necesidad de indicar nada más, al igual que con apply si indicamos <em>-auto-approve</em>* se eliminará todo sin necesidad de confirmación </p>
+<p><img alt="Ia1MKhkhTy" src="https://github.com/user-attachments/assets/992712c2-7eaa-42b2-a477-cb5728e8e041" /></p>
+<p><img alt="qJX3WcCZAC" src="https://github.com/user-attachments/assets/1f1f2f58-3f47-4d36-bc3c-0a95a0925a25" /></p>
+<p><img alt="mZ0zAwIQiA" src="https://github.com/user-attachments/assets/33490ccb-52c3-4455-9939-fd6af2c907bd" /></p></p>
     </article>
 </section>
             <!-- endblock -->
@@ -176,11 +193,11 @@
 
     </main>
 
-        <script>var base_url = '..';</script>
-        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/js/mkdocs.js"></script>
-			<script src="../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
 
 </body>
 
