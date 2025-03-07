@@ -7,7 +7,14 @@ nav:
     - Practica 4.5: practica-4.5.md
 
 theme:
-  name: dracula  
+  name: material  
+  palette:
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+    primary: teal
+
 
 
 extra:
