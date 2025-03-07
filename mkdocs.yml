@@ -12,7 +12,7 @@ theme:
     # Modo claro
     - scheme: default
       primary: teal
-      accent: deep purple
+      accent: black
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -20,7 +20,7 @@ theme:
     # Modo oscuro
     - scheme: slate
       primary: teal
-      accent: deep purple
+      accent: black
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -28,7 +28,6 @@ theme:
   features:
     - header.autohide
     - navigation.footer
-    - announce.dismiss
 
 extra:
   language: eu
@@ -36,8 +35,10 @@ extra:
     - icon: fontawesome/brands/github 
       link: https://github.com/marinaferb92
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/repositories/marinaferb92
+      link: https://hub.docker.com/u/marinaferb92
 
 
 plugins:
   - offline
+
+copyright: Copyright - 2025 Marina Fernandez
