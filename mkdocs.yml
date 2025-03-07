@@ -2,7 +2,6 @@ site_name: Marina mkdocks
 
 nav:
     - Principal: index.md
-    - Acerca de: about.md
     - Practica 3.1: practica-3.1.md
     - Practica 4.5: practica-4.5.md
 
@@ -26,10 +25,17 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+  features:
+    - header.autohide
+    - navigation.footer
+
+
 extra:
   language: eu
+  social:
+    - icon: fontawesome/brands/github 
+        link: https://github.com/marinaferb92
 
 
-
-extra:
-  language: eu
+plugins:
+  - offline
