@@ -8,12 +8,14 @@ En esta practica vamos a hacerlo gestionando el servicio de AWS.
 Para empezar, instalaremos Terraform como se nos indica en la guía oficial [guia oficial de terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
 Tambien deberemos instalar la herramienta de AWS cli y configurar nuestras credenciales de acceso utilizando el comando 
 `` aws configure``
+
 ![](images/mkdocks/practica4.5/imagen1.png)
 
 
 Una vez hecho podremos empezar a **Iniciar el directorio de trabajo** para ello ejecutaremos utilizaremos ``terraform init `` 
 
 Con `terraform fmt` formatean el archivo de configuración para que sea más legible y `terraform validate` validamos el archivo de configuración
+
 ![](images/mkdocks/practica4.5/imagen2.png)
 
 `terraform plan` nos permite ver los cambios que se aplicarán antes de ejecutarlos. 
