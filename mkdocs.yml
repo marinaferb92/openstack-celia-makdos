@@ -8,12 +8,26 @@ nav:
 
 theme:
   name: material  
+
   palette:
-    scheme: slate
-    toggle:
-      icon: material/brightness-4
-      name: Switch to light mode
-    primary: teal
+    # Modo claro
+    - scheme: default
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Modo oscuro
+    - scheme: slate
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra:
+  language: eu
 
 
 
