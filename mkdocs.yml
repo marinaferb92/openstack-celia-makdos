@@ -34,7 +34,7 @@ extra:
   language: eu
   social:
     - icon: fontawesome/brands/github 
-        link: https://github.com/marinaferb92
+      link: https://github.com/marinaferb92
 
 
 plugins:
