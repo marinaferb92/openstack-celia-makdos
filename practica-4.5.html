@@ -296,11 +296,11 @@
 En esta practica vamos a hacerlo gestionando el servicio de AWS.</p>
 <p>Para empezar, instalaremos Terraform como se nos indica en la guía oficial <a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli">guia oficial de terraform</a>.
 Tambien deberemos instalar la herramienta de AWS cli y configurar nuestras credenciales de acceso utilizando el comando 
-<code>aws configure</code>
-<img alt="" src="images/mkdocks/practica4.5/imagen1.png" /></p>
+<code>aws configure</code></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen1.png" /></p>
 <p>Una vez hecho podremos empezar a <strong>Iniciar el directorio de trabajo</strong> para ello ejecutaremos utilizaremos <code>terraform init</code> </p>
-<p>Con <code>terraform fmt</code> formatean el archivo de configuración para que sea más legible y <code>terraform validate</code> validamos el archivo de configuración
-<img alt="" src="images/mkdocks/practica4.5/imagen2.png" /></p>
+<p>Con <code>terraform fmt</code> formatean el archivo de configuración para que sea más legible y <code>terraform validate</code> validamos el archivo de configuración</p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen2.png" /></p>
 <p><code>terraform plan</code> nos permite ver los cambios que se aplicarán antes de ejecutarlos. </p>
 <p><img alt="" src="images/mkdocks/practica4.5/imagen3.png" /></p>
 <p>Una vez que tenemos seguridad de que nuestro archivo es correcto ejecutaremos <code>terraform apply</code> o `terraform apply -auto-approve, el segundo crea los recursos sin tener que estar confirmando, y veremos como se comienza a desplegar la infraestructura.</p>
