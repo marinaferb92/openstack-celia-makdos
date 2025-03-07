@@ -14,7 +14,7 @@ theme:
       primary: teal
       accent: black
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch
         name: Switch to dark mode
 
     # Modo oscuro
@@ -22,7 +22,7 @@ theme:
       primary: teal
       accent: black
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch-off-outline
         name: Switch to light mode
 
   features:
