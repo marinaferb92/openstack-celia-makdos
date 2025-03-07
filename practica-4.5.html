@@ -297,26 +297,26 @@ En esta practica vamos a hacerlo gestionando el servicio de AWS.</p>
 <p>Para empezar, instalaremos Terraform como se nos indica en la guía oficial <a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli">guia oficial de terraform</a>.
 Tambien deberemos instalar la herramienta de AWS cli y configurar nuestras credenciales de acceso utilizando el comando 
 <code>aws configure</code>
-<img alt="image" src="https://github.com/user-attachments/assets/2a912569-dd0b-435f-adb8-b70a0f4b9948" /></p>
+<img alt="" src="images/mkdocks/practica4.5/imagen1.png" /></p>
 <p>Una vez hecho podremos empezar a <strong>Iniciar el directorio de trabajo</strong> para ello ejecutaremos utilizaremos <code>terraform init</code> </p>
 <p>Con <code>terraform fmt</code> formatean el archivo de configuración para que sea más legible y <code>terraform validate</code> validamos el archivo de configuración
-<img alt="mhIX5wvw6Y" src="https://github.com/user-attachments/assets/07295e35-66a2-46d2-8d62-9298c8ac4409" /></p>
+<img alt="" src="images/mkdocks/practica4.5/imagen2.png" /></p>
 <p><code>terraform plan</code> nos permite ver los cambios que se aplicarán antes de ejecutarlos. </p>
-<p><img alt="CMR2erKpt0" src="https://github.com/user-attachments/assets/f5253b0d-cdb5-4782-a53f-930439c83882" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen3.png" /></p>
 <p>Una vez que tenemos seguridad de que nuestro archivo es correcto ejecutaremos <code>terraform apply</code> o `terraform apply -auto-approve, el segundo crea los recursos sin tener que estar confirmando, y veremos como se comienza a desplegar la infraestructura.</p>
-<p><img alt="KF30wPCKKg" src="https://github.com/user-attachments/assets/fa46a5ea-fd5a-413e-9fff-a66fa103701c" /></p>
-<p><img alt="sdXN6cEYfJ" src="https://github.com/user-attachments/assets/ac1115c7-1939-42bf-a639-3c53822336af" /></p>
-<p><img alt="wcblmYPKRe" src="https://github.com/user-attachments/assets/f39f67a7-c664-4606-9a22-90b457f7be13" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen4.png" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen5.png" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen6.png" /></p>
 <p>Una vez terminado si entramos en AWS vemos que la infraestructura está creada, con sus grupos de seguridad y las IPs flotantes creadas y asociadas a cada instancia.</p>
-<p><img alt="UA4vYrRa5s" src="https://github.com/user-attachments/assets/f6592c1c-edab-4088-9c27-e79dbe92b1a7" /></p>
-<p><img alt="AfUt282x2Y" src="https://github.com/user-attachments/assets/435e0b5a-e49e-4a97-b8e0-d0ceed937171" /></p>
-<p><img alt="Hbk3zCLvlz" src="https://github.com/user-attachments/assets/34e0c9ff-9b24-46a1-91e1-9545e25cc0ee" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen7.png" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen8.png" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen9.png" /></p>
 <p>Ejecutando <code>terraform show</code> podremos ver los recursos que tenemos creados y su estado</p>
-<p><img alt="P2FLgMwBxF" src="https://github.com/user-attachments/assets/e107f0a7-50c2-4b2e-a966-d1f20579e14f" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen10.png" /></p>
 <p>y con <code>terraform destroy</code> podremos destruir la infraestructura completa sin necesidad de indicar nada más, al igual que con apply si indicamos <em>-auto-approve</em>* se eliminará todo sin necesidad de confirmación </p>
-<p><img alt="Ia1MKhkhTy" src="https://github.com/user-attachments/assets/992712c2-7eaa-42b2-a477-cb5728e8e041" /></p>
-<p><img alt="qJX3WcCZAC" src="https://github.com/user-attachments/assets/1f1f2f58-3f47-4d36-bc3c-0a95a0925a25" /></p>
-<p><img alt="mZ0zAwIQiA" src="https://github.com/user-attachments/assets/33490ccb-52c3-4455-9939-fd6af2c907bd" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen11.png" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen12.png" /></p>
+<p><img alt="" src="images/mkdocks/practica4.5/imagen13.png" /></p>
 
 
 
